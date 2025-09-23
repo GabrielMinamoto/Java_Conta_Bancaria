@@ -37,7 +37,11 @@ public class conta_bancaria {
 
             switch (opcao){
                 case 1:
+
+                    System.out.println("Nome do usuário da conta: " + nome);
+                    System.out.println("Tipo da conta: " + tipoConta);
                     System.out.println("O saldo atualizado é " + saldo);
+
                     break;
                 case 2:
                     System.out.println("Qual valor deseja transferir? ");
@@ -46,6 +50,8 @@ public class conta_bancaria {
                         System.out.println("Não há saldo para realizar a transferência!");
                     } else {
                         saldo=saldo-valor;
+                        System.out.println("Nome do usuário da conta: " + nome);
+                        System.out.println("Tipo da conta: " + tipoConta);
                         System.out.println("Novo saldo: " + saldo);
                     }
                     break;
@@ -53,6 +59,8 @@ public class conta_bancaria {
                     System.out.println("Digite o valor recebido:");
                     valor=e.nextDouble();
                     saldo+=valor;
+                    System.out.println("Nome do usuário da conta: " + nome);
+                    System.out.println("Tipo da conta: " + tipoConta);
                     System.out.println("Saldo atualizado: " + saldo);
                     break;
                 case 4:
